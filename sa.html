@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="./sa.css">
+    <title>3주차 S.A - 김성호A</title>
+
+    <script>
+      window.onload = function(){
+        let btn = document.getElementById("btn")
+        btn.onclick = function() {
+          alert("제출 완료!")
+        }
+      }
+    </script>
+  </head>
+
+  <body>
+    <h1>간단한 회원가입 신청서</h1>
+    <form>
+      <div class="row">
+        <label for="first-name">First name :</label>
+        <input type="text" name="first-name" id="first-name" autocomplete="off" required>
+      </div>
+      <div class="row">
+        <label for="last-name">Last name :</label>
+        <input type="email" name="last-name" id="last-name" autocomplete="off" required>
+      </div>
+      <div class="row">
+        <label for="email">Email</label>
+        <input type="email" name="email" autocomplete="off" placeholder="email@example.com" required>
+      </div>
+      <hr>
+      <div class="row">
+        <label>Gender :</label>
+        <div class="radio-inline">
+          <input id="male" type="radio" name="male">
+          <label for="male">Male</label>
+        </div>
+        <div class="radio-inline">
+          <input id="female" type="radio" name="female">
+          <label for="female">Female</label>
+        </div>
+      </div>
+      <div class="row">
+        <label>Favorit :</label>
+        <label class="check"><input type="checkbox" name="lang" value="blue"> HTML</label>
+        <label class="check"><input type="checkbox" name="lang" value="blue"> JAVA</label>
+        <label class="check"><input type="checkbox" name="lang" value="blue"> JavaScript</label>
+      </div>
+      <div class="row">
+        <label>Browser :</label>
+        <select name="browser">
+          <option value="chrome">크롬</option>
+          <option value="safari">사파리</option>
+          <option value="firefox">파이어폭스</option>
+        </select>
+      </div>
+      <div class="row">
+          <label>Birthday :</label>
+          <input type="date" id="start" name="trip-start">
+      </div>
+      <button type="submit" id="btn">Submit</button>
+    </form>
+  </body>
+</html>
